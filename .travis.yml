@@ -9,3 +9,7 @@ script:
   - make lint
   - make test
   - make docker_build
+deploy:
+    provider: heroku
+    app: glacial-dawn-45430
+    api_key: ${HEROKU_API_KEY} 
